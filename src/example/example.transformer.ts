@@ -9,4 +9,7 @@ export class ExampleTransformer {
 
     @Transform({ transformer: trimString, isGroup: true })
     links: string[]
+
+    @Transform({ field: "title", transformer: (value: string) => value.toUpperCase() })
+    titleUppercase: string
 }

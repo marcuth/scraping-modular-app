@@ -3,7 +3,7 @@ import { TRANSFORM_KEY } from "../constants"
 export type Transformer = (value: any) => any
 
 export type TransformOptions = {
-    key?: string
+    field?: string | null
     transformer: Transformer
     isGroup?: boolean
 }
@@ -11,15 +11,15 @@ export type TransformOptions = {
 
 export function Transform(options: TransformOptions) {
     return (target: any, propertyKey: string) => {
-        const finalKey = options.key ?? propertyKey
+        const field = options.field !== undefined ? options.field : propertyKey
 
         return Reflect.defineMetadata(TRANSFORM_KEY, {
             ...options,
-            finalKey: finalKey
+            field: field
         }, target, propertyKey)
     }
 }
 
-export function getTransformMetadata(target: any, key: string): TransformOptions & { finalKey: string } {
+export function getTransformMetadata(target: any, key: string): TransformOptions & { field: string } {
     return Reflect.getMetadata(TRANSFORM_KEY, target, key)
 }
