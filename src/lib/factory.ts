@@ -44,10 +44,6 @@ export function createScrapingApp({ modules }: CreateScrapingAppOtions) {
             if (!moduleMetadata) {
                 throw new Error(`The module ${name} has not found!`)
             }
-
-            const client = new moduleMetadata.client()
-            const scraper = new moduleMetadata.scraper(client)
-            const parser = new moduleMetadata.parser()
         },
         executeAll() {
 
