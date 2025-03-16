@@ -1,0 +1,27 @@
+{
+  "name": "scraping-modular-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/jmespath": "^0.15.2",
+    "@types/node": "^22.13.10",
+    "@types/winston": "^2.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.3",
+    "jmespath": "^0.16.0",
+    "node-html-parser": "^7.0.1",
+    "reflect-metadata": "^0.2.2",
+    "winston": "^3.17.0"
+  }
+}

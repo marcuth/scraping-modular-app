@@ -1,0 +1,8 @@
+export const SCRAPER_OPTIONS_KEY = "scraper:options"
+export const PARSER_OPTIONS_KEY = "parser:options"
+export const TRANSFORMER_OPTIONS_KEY = "transformer:options"
+export const CLIENT_OPTIONS_KEY = "client:options"
+export const MODULE_OPTIONS_KEY = "module:options"
+export const HTML_EXTRACT_KEY = "html:extract"
+export const JSON_EXTRACT_KEY = "json:extract"
+export const PARSER_MODE_KEY = "parser:mode"

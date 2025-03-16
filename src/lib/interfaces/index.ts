@@ -1,0 +1,5 @@
+export { ClientInterface } from "./client.interface"
+export { ScraperInterface } from "./scraper.interface"
+export { TransformerInterface } from "./transformer.interface"
+export { ModuleInterface } from "./module.interface"
+export { ParserInterface } from "./parser.interface"
